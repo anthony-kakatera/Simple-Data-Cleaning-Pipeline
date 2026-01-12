@@ -12,3 +12,10 @@ def validate_email(email):
         return False
     pattern = r"^[\w\.-]+@[\w\.-]+\.\w+$"
     return bool(re.match(pattern, email))
+
+def validate_age(age):
+    try:
+        age = int(age)
+        return 0 < age < 120
+    except:
+        return False
