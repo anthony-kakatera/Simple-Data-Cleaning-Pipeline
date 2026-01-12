@@ -19,3 +19,9 @@ def validate_age(age):
         return 0 < age < 120
     except:
         return False
+    
+def parse_date(date_str):
+    try:
+        return pd.to_datetime(date_str, errors="coerce").date()
+    except:
+        return None
