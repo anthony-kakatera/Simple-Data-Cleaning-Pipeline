@@ -31,3 +31,6 @@ def run_pipeline(input_path, output_path):
     print(f"Cleaned data has {len(cleaned_df)} rows")
 
     cleaned_df.to_csv(output_path, index=False)
+
+if __name__ == "__main__":
+    run_pipeline("data/raw_data.csv", "data/cleaned_data.csv")
