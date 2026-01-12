@@ -9,3 +9,8 @@ A reusable data cleaning pipeline that loads raw csv files/data, applies validat
 - Standardizes dates
 - Removes invalid records
 - Outputs clean csv data 
+
+## How to Run
+```bash
+pip install -r requirements.txt
+python pipeline.py
